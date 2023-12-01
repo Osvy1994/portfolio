@@ -1,0 +1,38 @@
+.hero {
+  background-color: #f9f9f9;
+}
+
+.profile-pic {
+  max-width: 80%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid black;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 40px;
+}
+
+.hero-container h1 {
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+
+.info-row {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.hero-icons a {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
