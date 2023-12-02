@@ -5,14 +5,14 @@ import "./NavbarComp.css"
 
 export function NavbarComp() {
   return (
-    <Navbar expand="md" className="navbar-light fw-bold p-3">
+    <Navbar expand="md" className="navbar navbar-light fw-bold p-3">
       <Container fluid>
         <Navbar.Brand href="#">Osvaldo.dev</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="bold-font ms-auto my-2 my-lg-0"
-            style={{ maxHeight: "200px" }}
+            style={{ maxHeight: "220px" }}
             navbarScroll
           >
               <Nav.Link href="#home">Home</Nav.Link>
