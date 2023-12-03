@@ -33,7 +33,7 @@
 .logo-emoji-container {
   position: absolute;
   bottom: 25px;
-  right: 20px;
+  right: 22px;
 }
 
 .about-text-container {
@@ -84,21 +84,16 @@
   }
 
   .about-text-container {
-    max-width: 550px;
+    max-width: 90vw;
     margin: auto;
+    padding: 30px;
   }
 
   .image-container {
     max-width: 350px;
   }
 
-  .logo-container {
-    max-width: 170px;
+  .logo-container, .logo-emoji-container {
+    display: none;
   }
-
-  .logo-emoji-container {
-    bottom: 12px;
-    right: 12px;
-  }
-
 }

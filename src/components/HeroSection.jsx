@@ -49,7 +49,7 @@ export function HeroSection() {
           <Col md={6} className="hero-image order-1 order-md-last">
             <img
               className="img-fluid"
-              src="https://pbs.twimg.com/profile_images/1605523773192552448/PDSA3e9o_400x400.jpg"
+              src="./my-picture.JPG"
               alt="Profile Picture"
             />
           </Col>

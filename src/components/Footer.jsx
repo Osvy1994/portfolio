@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Container, Row, Col } from "react-bootstrap";
+import { Linkedin, Github } from "react-bootstrap-icons";
 import "./Footer.css";
 
 export function Footer() {
@@ -70,6 +71,14 @@ export function Footer() {
       </Container>
       <Container fluid className="copyright-container">
         <p>Copyright © 2023. All rights are reserved</p>
+        <div className="copyright-icons">
+          <a href="">
+            <Linkedin size={30} color="white" />
+          </a>
+          <a href="">
+            <Github size={30} color="white" />
+          </a>
+        </div>
       </Container>
     </footer>
   );

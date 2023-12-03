@@ -11,7 +11,7 @@ export function NavbarComp() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="bold-font ms-auto my-2 my-lg-0"
+            className="nav-links bold-font ms-auto my-2 my-lg-0"
             style={{ maxHeight: "220px" }}
             navbarScroll
           >
