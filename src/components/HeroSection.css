@@ -60,13 +60,31 @@
   gap: 30px;
 }
 
-@media screen and (max-width: 767px) {
+.tech-stack-icons img {
+  transition: transform 0.2s ease-in;
+}
+
+.tech-stack-icons img:hover {
+  cursor: pointer;
+  transform: translateY(-7px);
+}
+
+.tech-stack-separator-mobile {
+  padding: 0;
+  margin-top: -30px;
+  width: 120px;
+  height: 2px;
+  background-color: #555555;
+}
+
+@media screen and (max-width: 768px) {
   .hero-text {
     text-align: center;
   }
 
   .hero-main {
     padding: 50px;
+    max-width: 500px;
   }
 
   .hero-image {
