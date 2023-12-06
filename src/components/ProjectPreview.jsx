@@ -1,23 +1,24 @@
+/* eslint-disable react/prop-types */
 import { Container, Row, Col } from "react-bootstrap";
 import "./ProjectPreview.css";
 
-export function ProjectPreview(props) {
+export function ProjectPreview({ project }) {
   return (
     <div className="project-preview">
       <Container className="project-preview-container">
-        <Row className={props.reversed ? "project-row-reversed" : ""}>
+        <Row className={project.reversed ? "project-row-reversed" : ""}>
           <Col md={8} className="project-image-container">
-            <img src={props.projectImage} alt="Web page Preview" />
+            <img src={project.projectImage} alt="Web page Preview" />
           </Col>
-          <Col className="project-text-container" md={4}>
+          <Col md={4} className="project-text-container">
             <div>
-              <strong>{props.projectName}</strong>{" "}
-              <span>({props.projectDate})</span>
+              <strong>{project.projectName}</strong>{" "}
+              <span>{project.projectDate}</span>
             </div>
-            <p>{props.projectDetails}</p>
+            <p>{project.projectDetails}</p>
             <div className="tech-container">
-              <span>{props.jsFramework}</span>
-              <span>{props.cssFramework}</span>
+              <span>{project.jsFramework}</span>
+              <span>{project.cssFramework}</span>
             </div>
             <div className="projects-links-container">
               <span>
@@ -49,10 +50,10 @@ export function ProjectPreview(props) {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="tabler-icon tabler-icon-external-link"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="tabler-icon tabler-icon-external-link"
                   >
                     <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
                     <path d="M11 13l9 -9"></path>

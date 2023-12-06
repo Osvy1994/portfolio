@@ -7,12 +7,17 @@
   max-width: 1000px;
 }
 
+.projects-container > li {
+  list-style-type: none;
+  margin-bottom: 50px;
+}
+
 .projects-container > div {
   margin: 60px auto;
 }
 
 .projects-headline {
- max-width: 1000px;
+  max-width: 1000px;
 }
 
 .projects-headline h5 {
@@ -24,5 +29,3 @@
   color: #2d2e32;
   font-weight: bold;
 }
-
-

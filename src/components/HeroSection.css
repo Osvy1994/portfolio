@@ -1,7 +1,7 @@
 .hero {
   background-color: #f9f9f9;
   height: 100vh;
-  padding: 100px 20px;
+  padding: 200px 20px 100px;
 }
 
 .hero-main {
@@ -29,13 +29,13 @@
 @keyframes morph {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-}
-50% {
+  }
+  50% {
     border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-}
-100% {
+  }
+  100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-}
+  }
 }
 
 .hero-text {
@@ -94,6 +94,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hero-icons a {
+    margin: auto;
+    padding: 0 10px;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
   .hero-text {
     text-align: center;
   }

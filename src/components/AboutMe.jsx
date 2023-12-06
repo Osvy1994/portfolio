@@ -4,16 +4,11 @@ import "./AboutMe.css";
 export function AboutMe() {
   return (
     <div className="about" id="about-me">
-      <Container
-        fluid="md"
-        className="about-container pt-lg-5"
-        style={{ maxWidth: "1000px"} }
-      >
+      <Container fluid="md" className="about-container pt-lg-5">
         <Row>
           <Col md={6}>
             <div className="image-container">
               <img
-                className="laptop-image"
                 src="https://www.stefantopalovic.com/static/media/about-img.62b47e7f183d4b4e9feb.webp"
                 alt="Laptop and coffee picture"
               />
@@ -34,9 +29,7 @@ export function AboutMe() {
           </Col>
           <Col className="about-text-container" md={6}>
             <h5>ABOUT ME</h5>
-            <h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </h3>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
               tellus at leo iaculis aliquam. Pellentesque in nisi sit amet mi

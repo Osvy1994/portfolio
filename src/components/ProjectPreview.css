@@ -1,4 +1,3 @@
-
 .project-image-container {
   display: flex;
   justify-content: center;
@@ -8,7 +7,7 @@
 .project-preview-container {
   border-radius: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-image-container img {
@@ -45,6 +44,8 @@
   display: flex;
   gap: 20px;
   justify-content: center;
+  white-space: nowrap;
+  margin-top: 20px;
 }
 
 .projects-links-container a:hover {
@@ -52,6 +53,8 @@
 }
 
 .projects-links-container a {
+  display: flex;
+  flex-direction: row;
   color: #2d2e32;
   text-decoration: none;
   font-weight: bold;
@@ -73,11 +76,11 @@
   padding: 10px;
   border-radius: 10px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 768px) {
   .tech-container {
-    margin: 10px auto 40px;
+    margin: 10px auto 20px;
   }
 }

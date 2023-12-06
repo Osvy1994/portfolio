@@ -1,3 +1,6 @@
+#mainNavbar:target .navbar-collapse {
+  display: none;
+}
 
 .navbar {
   background-color: #fff;
