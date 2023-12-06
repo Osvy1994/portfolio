@@ -3,7 +3,7 @@ import "./AboutMe.css";
 
 export function AboutMe() {
   return (
-    <div className="about">
+    <div className="about" id="about-me">
       <Container
         fluid="md"
         className="about-container pt-lg-5"

@@ -1,7 +1,16 @@
+
 .navbar {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06);
 }
 
 .nav-links {
   text-align: center;
+  max-height: 220px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    border-radius: 0 0 20px 20px;
+  }
 }

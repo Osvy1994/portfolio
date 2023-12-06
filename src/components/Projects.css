@@ -1,3 +1,28 @@
 .projects {
   background-color: #f9f9f9;
+  padding: 100px 30px;
 }
+
+.projects-container {
+  max-width: 1000px;
+}
+
+.projects-container > div {
+  margin: 60px auto;
+}
+
+.projects-headline {
+ max-width: 1000px;
+}
+
+.projects-headline h5 {
+  color: #147efb;
+  font-weight: bold;
+}
+
+.projects-headline h3 {
+  color: #2d2e32;
+  font-weight: bold;
+}
+
+

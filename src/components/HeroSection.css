@@ -1,11 +1,11 @@
 .hero {
   background-color: #f9f9f9;
   height: 100vh;
+  padding: 100px 20px;
 }
 
 .hero-main {
   margin: auto;
-  padding: 100px 0;
 }
 
 .hero-image {
@@ -17,9 +17,25 @@
 .hero-image img {
   height: 340px;
   width: 340px;
-  border-radius: 50%;
   object-fit: cover;
-  border: 3px solid black;
+  border: 3px solid rgb(0, 0, 0);
+  border-top-left-radius: 60%;
+  border-top-right-radius: 40% 30%;
+  border-bottom-right-radius: 30% 70%;
+  border-bottom-left-radius: 70% 40%;
+  animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+}
+100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
 }
 
 .hero-text {
@@ -45,6 +61,7 @@
 .tech-stack {
   display: flex;
   align-items: center;
+  margin-top: 100px;
   gap: 30px;
   font-size: 1.5rem;
 }
@@ -70,7 +87,6 @@
 }
 
 .tech-stack-separator-mobile {
-  padding: 0;
   margin-top: -30px;
   width: 120px;
   height: 2px;
@@ -83,7 +99,6 @@
   }
 
   .hero-main {
-    padding: 50px;
     max-width: 500px;
   }
 
