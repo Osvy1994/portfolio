@@ -19,7 +19,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <div className="hero" id="home">
+    <section className="hero" id="home">
       <Container fluid="md" className="pt-lg-5" style={{ maxWidth: "1000px" }}>
         <Row className="hero-main">
           <Col md={6} className="hero-text">
@@ -80,6 +80,6 @@ export function HeroSection() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }

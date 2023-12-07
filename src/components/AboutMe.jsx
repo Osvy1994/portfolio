@@ -3,7 +3,7 @@ import "./AboutMe.css";
 
 export function AboutMe() {
   return (
-    <div className="about" id="about-me">
+    <section className="about" id="about-me">
       <Container fluid="md" className="about-container pt-lg-5">
         <Row>
           <Col md={6}>
@@ -40,6 +40,6 @@ export function AboutMe() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }

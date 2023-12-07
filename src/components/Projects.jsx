@@ -5,7 +5,7 @@ import { myProjects } from "../projects/myProjects";
 
 export function Projects() {
   return (
-    <div className="projects" id="projects-list">
+    <section className="projects" id="projects-list">
       <Container className="projects-container">
         <div className="projects-headline">
           <h5>PORTFOLIO</h5>
@@ -17,6 +17,6 @@ export function Projects() {
           </li>
         ))}
       </Container>
-    </div>
+    </section>
   );
 }

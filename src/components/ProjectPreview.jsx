@@ -26,7 +26,6 @@ export function ProjectPreview({ project }) {
   };
 
   return (
-    <div className="project-preview">
       <Container className="project-preview-container">
         <Row className={project.reversed ? "project-row-reversed" : ""}>
           <Col lg={8} className="project-image-container">
@@ -94,6 +93,5 @@ export function ProjectPreview({ project }) {
           </Col>
         </Row>
       </Container>
-    </div>
   );
 }
