@@ -22,7 +22,7 @@ export function HeroSection() {
     <div className="hero" id="home">
       <Container fluid="md" className="pt-lg-5" style={{ maxWidth: "1000px" }}>
         <Row className="hero-main">
-          <Col md={6} className="hero-text order-2 order-md-first">
+          <Col md={6} className="hero-text">
             <h1>Front-End React Developer👋🏻</h1>
             <p className="gray-font">
               Hi. I'm Osvaldo Madrigal. A passionate Front-end React Developer
@@ -46,7 +46,7 @@ export function HeroSection() {
               </a>
             </div>
           </Col>
-          <Col md={6} className="hero-image order-1 order-md-last">
+          <Col md={6} className="hero-image">
             <img
               className="img-fluid"
               src="./my-picture.jpg"

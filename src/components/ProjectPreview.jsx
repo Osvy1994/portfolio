@@ -1,22 +1,51 @@
 /* eslint-disable react/prop-types */
 import { Container, Row, Col } from "react-bootstrap";
 import "./ProjectPreview.css";
+import { useState, useEffect } from "react";
 
 export function ProjectPreview({ project }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    const image = document.getElementById("scrollingImage");
+    if (isHovered) {
+      image.style.transform = `translateY(-76%)`;
+      image.style.transitionDuration = "10s";
+    } else {
+      image.style.transform = `translateY(0%)`;
+      image.style.transitionDuration = "10s";
+    }
+  }, [isHovered]);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <div className="project-preview">
       <Container className="project-preview-container">
         <Row className={project.reversed ? "project-row-reversed" : ""}>
-          <Col md={8} className="project-image-container">
-            <img src={project.projectImage} alt="Web page Preview" />
+          <Col lg={8} className="project-image-container">
+            <img
+              className={`projectImg ${isHovered ? "hovered" : ""}`}
+              id="scrollingImage"
+              src={project.projectImage}
+              alt="Web page Preview"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            />
           </Col>
-          <Col md={4} className="project-text-container">
+          <Col lg={4} className="project-text-container">
             <div>
               <strong>{project.projectName}</strong>{" "}
               <span>{project.projectDate}</span>
             </div>
             <p>{project.projectDetails}</p>
-            <div className="tech-container">
+            <div className="skills-container">
               <span>{project.jsFramework}</span>
               <span>{project.cssFramework}</span>
             </div>

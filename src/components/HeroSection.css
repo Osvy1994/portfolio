@@ -101,6 +101,7 @@
 
   .hero {
     padding-top: 100px;
+    height: auto;
   }
 
   .hero-text {
@@ -109,6 +110,8 @@
 
   .hero-main {
     max-width: 500px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .hero-image {
@@ -135,5 +138,10 @@
 
   .tech-stack-separator {
     display: none;
+  }
+
+  .tech-stack-icons {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

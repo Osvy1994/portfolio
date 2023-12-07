@@ -4,7 +4,7 @@ export const myProjects = [
     reversed: false,
     projectName: "CAR RENTAL",
     projectImage:
-      "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02_m.jpg",
+      "../public/car-rental.webp",
 
     projectDate: "(February 2023)",
     projectDetails:
