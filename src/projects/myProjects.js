@@ -4,7 +4,7 @@ export const myProjects = [
     reversed: false,
     projectName: "CAR RENTAL",
     projectImage:
-      "../public/car-rental.jpg",
+      "https://www.stefantopalovic.com/static/media/car-rental-full.c58b37da333d73238fdd.webp",
 
     projectDate: "(February 2023)",
     projectDetails:
