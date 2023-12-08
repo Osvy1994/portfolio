@@ -16,7 +16,7 @@ export function HeroSection() {
     return () => {
       window.removeEventListener("resize", updateScreenWidth);
     };
-  }, []);
+  }, [screenWidth]);
 
   return (
     <section className="hero" id="home">

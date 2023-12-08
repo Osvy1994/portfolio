@@ -4,7 +4,7 @@ export const myProjects = [
     reversed: false,
     projectName: "CAR RENTAL",
     projectImage:
-      "../public/car-rental.webp",
+      "../public/car-rental.jpg",
 
     projectDate: "(February 2023)",
     projectDetails:

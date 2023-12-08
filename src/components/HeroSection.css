@@ -145,3 +145,10 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 933px) {
+
+  .hero {
+    height: auto;
+  }
+}
