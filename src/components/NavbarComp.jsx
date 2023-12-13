@@ -21,6 +21,7 @@ export function NavbarComp() {
       expand="md"
       className="navbar fixed-top navbar-light fw-bold p-3"
       id="mainNavbar"
+      //collapseOnSelect (variant)
       expanded={expanded}
     >
       <Container fluid>
